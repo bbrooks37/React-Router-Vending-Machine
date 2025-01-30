@@ -1,0 +1,120 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Modern font stack */
+  margin: 0; /* Remove default body margins */
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray text color */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.app-content {
+  flex: 1; /* Allow content to take up available space */
+  padding: 2rem; /* Increased padding */
+  max-width: 960px; /* Set a maximum width for content */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Blue headings */
+}
+
+a {
+  color: #007bff; /* Blue links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #343a40; /* Dark background for navbar */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; /* Distribute links evenly */
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff; /* White link color */
+  font-weight: 500; /* Slightly bolder font */
+  padding: 0.5rem 1rem; /* Add some padding to links */
+  border-radius: 5px; /* Rounded corners for links */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+nav a:hover, nav a.active { /* Style for hover and active links */
+  background-color: #0056b3; /* Darker blue background on hover/active */
+  color: #fff;
+}
+
+
+
+/* Snack Page Styles */
+.snack-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center; /* Center text within snack page */
+}
+
+.snack-page img {
+  max-width: 50%; /* Adjust image max-width as needed */
+  height: auto;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+  border-radius: 8px; /* Slightly round image corners */
+}
+
+.back-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design (Example - Adjust breakpoints as needed) */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .snack-page img {
+    max-width: 90%; /* Make images take up more space on smaller screens */
+  }
+}
